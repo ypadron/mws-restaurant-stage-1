@@ -1,12 +1,3 @@
-// Register Service Worker
-if ("serviceWorker" in navigator) {
-  navigator.serviceWorker
-  .register("js/sw.js")
-  .then(function(err) {
-      console.log(err);
-    });
-}
-
 let restaurants,
   neighborhoods,
   cuisines
@@ -14,13 +5,22 @@ var newMap
 var markers = []
 
 /**
+ * Register Service Worker
  * Fetch neighborhoods and cuisines as soon as the page is loaded.
  */
+if ("serviceWorker" in navigator)  {
+  navigator.serviceWorker.register("/sw.js").catch(function(err) {
+    console.log(err);
+  });
+}
+
+
 document.addEventListener('DOMContentLoaded', (event) => {
   initMap(); // added
   fetchNeighborhoods();
   fetchCuisines();
 });
+
 
 /**
  * Fetch all neighborhoods and set their HTML.
