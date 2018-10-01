@@ -1,3 +1,12 @@
+// Register Service Worker
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker
+  .register("js/sw.js")
+  .then(function(err) {
+      console.log(err);
+    });
+}
+
 let restaurants,
   neighborhoods,
   cuisines
