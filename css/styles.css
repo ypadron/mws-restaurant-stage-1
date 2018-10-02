@@ -46,12 +46,15 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 }
 #footer {
   background-color: #444;
-  color: #aaa;
-  font-size: 8pt;
+	font-size: 8pt;
   letter-spacing: 1px;
-  padding: 25px;
-  text-align: center;
+	text-align: center;
   text-transform: uppercase;
+  padding: 25px;
+}
+
+#footer p{
+	color: #fff;
 }
 /* ====================== Navigation ====================== */
 nav {
@@ -221,6 +224,7 @@ body .inside {
 .inside #footer {
   bottom: 0;
   position: absolute;
+	color: #fff;
 	padding: 25px 0px;
 	width: 100%;
 	min-width: 320px;
