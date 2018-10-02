@@ -9,8 +9,8 @@ var markers = []
  * Fetch neighborhoods and cuisines as soon as the page is loaded.
  */
 if ("serviceWorker" in navigator)  {
-  navigator.serviceWorker.register("/sw.js").catch(function(err) {
-    console.log(err);
+  navigator.serviceWorker.register("/sw.js").catch(function(error) {
+    console.log(error);
   });
 }
 
