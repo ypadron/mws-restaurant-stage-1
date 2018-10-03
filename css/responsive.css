@@ -1,7 +1,94 @@
 /* Responsive  CSS  */
+@media screen and (min-width: 400px) {
+
+}
+
+/* Minor Breakpoint? */
+/*
+* @media screen and (min-width: 521px) {
+*
+* }
+*/
+
+/* ====================================================== */
+@media screen and (min-width: 700px) {
+  body {
+  	margin: auto;
+    width: 80%;
+  }
+  #breadcrumb {
+      width: 50%;
+  }
+
+  /* ====================== Map ====================== */
+  #map-container  {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  /* ====================== Restaurant Listing ====================== */
+  #restaurants-list {
+    margin: auto;
+    padding: 30px 0px 60px;
+    text-align: center;
+    width: 100%;
+  }
+  #restaurants-list li {
+    margin-bottom: 25px;
+    min-height: 380px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 75%;
+  }
+  #restaurants-list .restaurant-img {
+    margin: auto;
+    padding: 0;
+    height: auto;
+  }
+  #restaurants-list li h1 {
+    margin: 20px 0 10px 4%;
+  }
+  #restaurants-list p {
+    margin-left: 4%;
+  }
+  #restaurants-list li a {
+    margin-left: 4%;
+  }
+  /* ====================== Restaurant Details ====================== */
+  .inside header {
+    position: absolute;
+    width: 100%;
+  }
+  .inside #map-container {
+    /* background: blue none repeat scroll 0 0; */
+    height: 90%;
+    position: absolute;
+    right: 0;
+    top: 80px;
+    max-width: 50%;
+  }
+  #restaurant-img {
+  	max-width: 100%;
+    height: auto;
+  }
+  #restaurant-container, #reviews-container {
+    padding: 140px 0px 30px;
+    max-width: 50%;
+  }
+  #reviews-container {
+    padding: 30px 0px 80px;
+  }
+  #reviews-list li {
+    margin: auto;
+    margin-bottom: 15px;
+    padding-top: 10px;
+  }
+}
+
+/* ====================================================== */
 @media screen and (min-width: 950px) {
 
-  body,td,th,p{
+  body,td,th,p  {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 10pt;
 	color: #333;
@@ -69,12 +156,12 @@ nav h1 a {
   text-transform: uppercase;
 }
 #breadcrumb {
-    padding: 10px 40px 16px;
+    padding: 10px 0px 16px 40px;
     list-style: none;
     background-color: #eee;
     font-size: 17px;
     margin: 0;
-    width: calc(50% - 80px);
+    width: calc(50% - 40px);
 }
 
 /* Display list items side by side */
@@ -297,23 +384,5 @@ nav h1 a {
 #restaurant-hours td {
   color: #666;
 }
-
-}
-@media screen and (min-width: 400px) {
-
-}
-
-/* Minor Breakpoint? */
-/*
-* @media screen and (min-width: 521px) {
-*
-* }
-*/
-
-@media screen and (min-width: 700px) {
-
-}
-
-
 
 }
