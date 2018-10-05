@@ -1,3 +1,5 @@
+//[Service Worker Script by Matt Gaunt](https://developers.google.com/web/fundamentals/primers/service-workers/)
+
 let restaurant_reviews_cache = 'restaurant-reviews-cache-v1';
 let urlsToCache = [
 	'/',

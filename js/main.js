@@ -6,6 +6,7 @@ var markers = [];
 
 /**
  * Register Service Worker
+ * Service Worker Script by Matt Gaunt](https://developers.google.com/web/fundamentals/primers/service-workers/)
  * Fetch neighborhoods and cuisines as soon as the page is loaded.
  */
 if ('serviceWorker' in navigator)  {
