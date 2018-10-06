@@ -163,6 +163,7 @@
 
 /* ====================== Restaurant Listing ====================== */
 	#restaurants-list {
+		display: grid;
   	background-color: #f3f3f3;
   	list-style: outside none none;
   	margin: 0;
