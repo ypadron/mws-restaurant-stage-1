@@ -3,7 +3,7 @@
 /* ====================== Restaurant Listing ====================== */
   #restaurants-list {
     margin: auto;
-    padding: 30px 0px 30px;
+    /* padding: 30px 0px 30px; */
     /* text-align: center; */
     width: 100%;
   }
@@ -12,7 +12,7 @@
     min-height: 380px;
     padding-top: 25px;
     padding-bottom: 25px;
-    width: 95%;
+    /* width: 95%; */
   }
   #restaurants-list .restaurant-img {
     margin: auto;
@@ -43,11 +43,25 @@
 }
 
 /* ====================================================== */
-@media screen and (min-width: 700px) {
-  body {
-  	margin: auto;
-    width: 80%;
+/* Minor Breakpoint */
+@media screen and (min-width: 500px)  {
+/* ====================== Restaurant Listing ====================== */
+  #restaurants-list {
+    grid-template-columns: 1fr 1fr;
+    /* margin: auto; */
+    /* padding: 30px 0px 60px; */
+    width: 100%;
   }
+
+  #restaurants-list li {
+  	padding: 0;
+  	text-align: left;
+  	width: 50%;
+	}
+}
+
+/* ====================================================== */
+@media screen and (min-width: 700px) {
   #breadcrumb {
       width: 50%;
   }
@@ -60,13 +74,15 @@
   }
   /* ====================== Restaurant Listing ====================== */
   #restaurants-list {
-    margin: auto;
-    padding: 30px 0px 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* margin: auto; */
+    /* padding: 30px 0px 60px; */
     width: 100%;
   }
   #restaurants-list li {
     margin-bottom: 25px;
-    min-height: 380px;
+    height: auto;
     padding-top: 25px;
     padding-bottom: 25px;
     width: 75%;
@@ -117,10 +133,6 @@
 
 /* ====================================================== */
 @media screen and (min-width: 950px) {
-body {
-	margin: auto;
-  width: 80%;
-}
 
 /* ====================== Navigation ====================== */
 #breadcrumb {
@@ -157,8 +169,10 @@ body {
 
 /* ====================== Restaurant Listing ====================== */
 #restaurants-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   margin: auto;
-  padding: 30px 0px 60px;
+  /* padding: 30px 0px 60px; */
   width: 100%;
 }
 #restaurants-list li {
