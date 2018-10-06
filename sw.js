@@ -37,7 +37,7 @@ self.addEventListener('install', function(event)  {
 
 //define fetch event
 self.addEventListener('fetch', function(event)  {
-	event.respndWith(
+	event.respondWith(
 		// Promise - looks at request and finds any cached results from service worker caches
 		caches.match(event.request)
 			.then(function(response)  {
