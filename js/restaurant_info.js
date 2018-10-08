@@ -2,6 +2,22 @@ let restaurant;
 var newMap;
 
 /**
+ * Register Service Worker
+ * Service Worker Script by Matt Gaunt](https://developers.google.com/web/fundamentals/primers/service-workers/)
+ * Fetch restaurant details as soon as the page is loaded.
+ */
+/*
+if ('serviceWorker' in navigator)  {
+	navigator.serviceWorker.register('/sw.js').then(function(registration) {
+		// Registration was successful.
+		console.log('serviceWorker registration successful with scope: ', registration.scope);
+	}, function(err) {
+		// Registration failed
+		console.log('serviceWorker registration failed: ', err);
+	});
+}
+*/
+/**
  * Initialize map as soon as the page is loaded.
  */
 document.addEventListener('DOMContentLoaded', (event) => {
@@ -89,6 +105,8 @@ let fillRestaurantHTML = (restaurant = self.restaurant) => {
 	const image = document.getElementById('restaurant-img');
 	image.className = 'restaurant-img';
 	image.src = DBHelper.imageUrlForRestaurant(restaurant);
+	// Add alt attribute to images
+	image.setAttribute('alt', restaurant.name + ' restaurant ');
 
 	const cuisine = document.getElementById('restaurant-cuisine');
 	cuisine.innerHTML = restaurant.cuisine_type;
