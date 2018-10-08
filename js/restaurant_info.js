@@ -6,7 +6,7 @@ var newMap;
  * Service Worker Script by Matt Gaunt](https://developers.google.com/web/fundamentals/primers/service-workers/)
  * Fetch restaurant details as soon as the page is loaded.
  */
-/*
+
 if ('serviceWorker' in navigator)  {
 	navigator.serviceWorker.register('/sw.js').then(function(registration) {
 		// Registration was successful.
@@ -16,7 +16,7 @@ if ('serviceWorker' in navigator)  {
 		console.log('serviceWorker registration failed: ', err);
 	});
 }
-*/
+
 /**
  * Initialize map as soon as the page is loaded.
  */
@@ -144,7 +144,7 @@ let fillRestaurantHoursHTML = (operatingHours = self.restaurant.operating_hours)
  */
 let fillReviewsHTML = (reviews = self.restaurant.reviews) => {
 	const container = document.getElementById('reviews-container');
-	const title = document.createElement('h2');
+	const title = document.createElement('h3');
 	title.innerHTML = 'Reviews';
 	container.appendChild(title);
 
