@@ -174,9 +174,11 @@
   	background-color: #fff;
   	border: 2px solid #ccc;
   	font-family: Arial,sans-serif;
+		min-height: 380px;
   	margin: auto;
-  	height: auto;
-  	padding: 0;
+		margin-bottom: 15px;
+		padding-top: 15px;
+		padding-bottom: 15px;
   	text-align: left;
   	width: 100%;
 	}

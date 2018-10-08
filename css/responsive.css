@@ -3,13 +3,10 @@
 /* ====================== Restaurant Listing ====================== */
   #restaurants-list {
     margin: auto;
-    /* padding: 30px 0px 30px; */
-    /* text-align: center; */
     width: 100%;
   }
   #restaurants-list li {
     margin-bottom: 25px;
-    min-height: 380px;
     padding-top: 25px;
     padding-bottom: 25px;
     /* width: 95%; */
@@ -28,7 +25,7 @@
   #restaurants-list li a {
     margin-left: 4%;
   }
-}
+
 /* ====================== Restaurant Details ====================== */
   #restaurant-container, #reviews-container {
 	  width: 100%;
@@ -48,15 +45,11 @@
 /* ====================== Restaurant Listing ====================== */
   #restaurants-list {
     grid-template-columns: 1fr 1fr;
-    /* margin: auto; */
-    /* padding: 30px 0px 60px; */
-    width: 100%;
+    grid-gap: 15px;
   }
 
   #restaurants-list li {
-  	padding: 0;
-  	text-align: left;
-  	width: 50%;
+  	/* width: 50%; */
 	}
 }
 
@@ -76,16 +69,10 @@
   #restaurants-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
     /* margin: auto; */
     /* padding: 30px 0px 60px; */
-    width: 100%;
-  }
-  #restaurants-list li {
-    margin-bottom: 25px;
-    height: auto;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    width: 75%;
+    /* width: 100%; */
   }
   #restaurants-list .restaurant-img {
     margin: auto;
@@ -93,7 +80,7 @@
     height: auto;
   }
   #restaurants-list li h1 {
-    margin: 20px 0 10px 4%;
+    margin: 20px 0 10px 0;
   }
   #restaurants-list p {
     margin-left: 4%;
@@ -176,23 +163,22 @@
   width: 100%;
 }
 #restaurants-list li {
-  margin-bottom: 25px;
   padding-top: 25px;
   padding-bottom: 25px;
-  width: 75%;
+  /* width: 100%; */
 }
 #restaurants-list .restaurant-img {
   margin: auto;
   padding: 0;
 }
 #restaurants-list li h1 {
-  margin: 20px 0 10px 4%;
+  margin: 20px 0 10px 0;
 }
 #restaurants-list p {
   margin-left: 4%;
 }
 #restaurants-list li a {
-  margin-left: 4%;
+  /* margin-left: 4%; */
 }
 
 /* ====================== Restaurant Details ====================== */
