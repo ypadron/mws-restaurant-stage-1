@@ -57,7 +57,7 @@ self.addEventListener('fetch', function(event)  {
 							return response;
 						}
 						// if all checks are passed then response (stream) is cloned - one for browser/one for cache
-						var responseToCache = respond.clone();
+						var responseToCache = response.clone();
 
 						caches.open(restaurant_reviews_cache)
 							.then(function(cache) {
