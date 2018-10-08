@@ -182,7 +182,7 @@ let createRestaurantHTML = (restaurant) => {
 	image.className = 'restaurant-img';
 	image.src = DBHelper.imageUrlForRestaurant(restaurant);
 	// Add alt attribute to images
-	image.setAttribute('alt', restaurant.name + ' ' + 'in ' + restaurant.neighborhood);
+	image.setAttribute('alt', restaurant.name + ' Restaurant ' + 'in ' + restaurant.neighborhood);
 	li.append(image);
 
 	const name = document.createElement('h1');
