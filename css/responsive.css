@@ -47,10 +47,15 @@
     grid-template-columns: 1fr 1fr;
     grid-gap: 15px;
   }
-
   #restaurants-list li {
   	/* width: 50%; */
 	}
+/* ====================== Restaurant Details ====================== */
+  .inside header nav #breadcrumb	{
+    padding: 0;
+    text-align: left;
+    margin-top: 39px;
+}
 }
 
 /* ====================================================== */
@@ -99,6 +104,11 @@
     right: 0;
     top: 80px;
     max-width: 50%;
+  }
+  .inside header nav #breadcrumb	{
+    padding: 0;
+    text-align: left;
+    margin-top: 42px;
   }
   #restaurant-img {
   	max-width: 100%;
@@ -184,6 +194,11 @@
 /* ====================== Restaurant Details ====================== */
 .inside header {
   position: absolute;
+}
+.inside header nav #breadcrumb	{
+  padding: 0;
+  text-align: left;
+  margin-top: 42px;
 }
 .inside #map-container {
   height: 90%;
