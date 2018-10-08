@@ -29,9 +29,10 @@ In a terminal, check the version of Python you have: `python -V`. If you have Py
 
 ## Resources
 
-* [Service Workers: an Introduction](https://developers.google.com/web/fundamentals/primers/service-workers/)
+* [Service Workers: An Introduction](https://developers.google.com/web/fundamentals/primers/service-workers/)
 * [Time Saving CSS Techniques to Create Responsive Images](https://medium.freecodecamp.org/time-saving-css-techniques-to-create-responsive-images-ebb1e84f90d5)
 * [FEND P5: Resources](https://www.diigo.com/outliner/fjslyn/Udacity-Restaurant-Reviews-App-(project-%235)?key=zqiopam1yz)
+* [ARIA: Application Role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Application_Role)
 * [Matthew Cranford's Restaurant Review App Walkthrough](https://matthewcranford.com/restaurant-reviews-app-walkthrough-part-4-service-workers/)
 
 ## Leaflet.js and Mapbox:
